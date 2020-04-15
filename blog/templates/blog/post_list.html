@@ -7,13 +7,6 @@
                     </div>
                     <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
-                    <label for="cars">Choose a car:</label>
-                         <select class = 'option'id="cars" name="cars">
-                        {% for option in options %}
-                            <option class = 'option' value =  "{{option}}"</option>
-                        {% endfor %}
-                         </select>
-                         <input type="submit">
                 </div>
             {% endfor %}
     {% endblock %}
