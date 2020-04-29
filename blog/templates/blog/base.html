@@ -8,17 +8,12 @@
         <script type="text/javascript" src="{% static 'blog/js/scripts.js' %}"></script>
     </head>
     <body>
-        <p><button onclick="sayHello()">Click Me</button></p>
         <div class ='page-header'>
             {% if user.is_authenticated %}
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             {% endif %}
             <h1><a href="/">RoDjango Blog</a></h1>
         </div>
-        <p><button onclick="myMove()">Click Me</button></p>
-    <div id ="container">
-      <div id ="animate"></div>
-    </div>
 
         <div class="content container">
     <div class="row">
